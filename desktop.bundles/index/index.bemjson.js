@@ -2,7 +2,7 @@
 	block: 'page',
 	mix: { block: 'base' },
   title: 'Теплые окна',
-  favicon: '/favicon.png',
+  favicon: '../../favicon.png',
   head: [
       { elem: 'meta', attrs: { name: 'description', content: '' } },
       { elem: 'meta', attrs: { name: 'viewport', content: 'width=1024, initial-scale=1' } },
@@ -16,7 +16,7 @@
 				{
 					block: 'image',
 					mix: { block: 'header', elem: 'logo' },
-					url: '/images/logo.png',
+					url: '../../images/logo.png',
 					alt: 'Теплые окна',
 					width: 158,
 					height: 74
