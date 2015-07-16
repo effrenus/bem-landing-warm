@@ -6,7 +6,7 @@
   head: [
       { elem: 'meta', attrs: { name: 'description', content: '' } },
       { elem: 'meta', attrs: { name: 'viewport', content: 'width=1024, initial-scale=1' } },
-      { elem: 'css', url: '_index.css' }
+      { elem: 'css', url: 'index.css' }
   ],
   scripts: [{ elem: 'js', url: '_index.js' }],
   content: [
