@@ -1,0 +1,18 @@
+block('income-calculator')(
+
+	tag()('form'),
+
+	content()(function(){
+		return [
+			{ elem: 'title', content: 'Узнайте, сколько Вы заработаете<br> на продаже окон' },
+			{ elem: 'label', content: 'Количество проданных&nbsp;окон'},
+			{ block: 'input', mods: { rounded: true, size: 's' }, mix: { block: 'income-calculator', elem: 'input' }, val: 40 },
+			{ block: 'button', mods: { submit: true }, mix: { block: 'income-calculator', elem: 'button' }, text: 'Узнать заработок' },
+			{ elem: 'label', content: 'Заработок'},
+			{ block: 'input', mods: { rounded: true, size: 's' }, mix: { block: 'income-calculator', elem: 'input' }, val: 40 }
+		];
+	})
+)
+
+
+block('income-calculator').elem('label').tag()('label')

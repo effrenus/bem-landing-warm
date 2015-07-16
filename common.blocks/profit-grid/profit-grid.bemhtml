@@ -1,0 +1,50 @@
+block('profit-grid')(
+	content()(function(){
+		return [
+			{
+				elem: 'container',
+				content: [
+					{ elem: 'row', elemMods: {n: 1}},
+					{ elem: 'row', elemMods: {n: 2}},
+					{ elem: 'row', elemMods: {n: 3, last: true}}
+				]
+			}
+		];
+	})
+)
+
+block('profit-grid').elem('row').elemMod('n', 1)(
+	content()(function(){
+		return [
+			{ elem: 'cell' },
+			{ elem: 'cell', elemMods: { type: 'wallet' }, content: 'Рентабельность бизнеса 14%' },
+			{ elem: 'cell', elemMods: { type: 'mess' }, content: 'Постоянное сопровождение по всем вопросам от Головного офиса' },
+			{ elem: 'cell', elemMods: { type: 'money' }, content: 'Наценка на услуги 40%' },
+			{ elem: 'cell', elemMods: { last: true } }
+		];
+	})
+)
+
+block('profit-grid').elem('row').elemMod('n', 2)(
+	content()(function(){
+		return [
+			{ elem: 'cell', elemMods: { type: 'org' }, content: 'Опытная и амбициозная команда предпринимателей' },
+			{ elem: 'cell', elemMods: { type: 'best' }, content: 'Первоклассный сервис' },
+			{ elem: 'cell', elemMods: { type: 'exclusive' }, content: 'Эксклюзивные условия от производителей' },
+			{ elem: 'cell', elemMods: { type: 'trend' }, content: 'Управление бизнесом по показателям' },
+			{ elem: 'cell', elemMods: { type: 'aim' ,last: true }, content: 'Адресная доставка товара' }
+		];
+	})
+)
+
+block('profit-grid').elem('row').elemMod('n', 3)(
+	content()(function(){
+		return [
+			{ elem: 'cell' },
+			{ elem: 'cell', elemMods: { type: 'partner' }, content: 'Постоянное сотрудничество с государственными органами' },
+			{ elem: 'cell', elemMods: { type: 'quality' }, content: 'Высокое качество продукции, гарантированное лидерами рынка VEKA и REHAU' },
+			{ elem: 'cell', elemMods: { type: 'hitech' }, content: 'Технологии автоматизированного управления бизнесом' },
+			{ elem: 'cell', elemMods: { last: true } }
+		];
+	})
+)

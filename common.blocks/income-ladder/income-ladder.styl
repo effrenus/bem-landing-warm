@@ -1,0 +1,46 @@
+
+$ladder-step-space = 50px
+$steps-count = 4
+
+.income-ladder
+	position: relative
+	padding-right: 50px
+	clearfix()
+
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: (($steps-count - 1) * $ladder-step-space) + 25px
+		sprite($y_arrow)
+
+	&__step
+		float: right
+		margin-left: 70px
+		text-align: center
+
+		&:before
+			content: ''
+			display: block
+			margin: 0 auto 10px
+
+		for i in (1..$steps-count)
+			&_lv_{i}
+				margin-top: ((i - 1) * $ladder-step-space)
+
+		&_lv_1:before
+			sprite($y1)
+
+		&_lv_2:before
+			sprite($y2)
+
+		&_lv_3:before
+			sprite($y3)
+
+		&_lv_4:before
+			sprite($y4)
+
+		& b
+			display: block
+			font-size: 1.8em
+			font-weight: bold

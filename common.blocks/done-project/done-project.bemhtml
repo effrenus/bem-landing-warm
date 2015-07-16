@@ -1,0 +1,33 @@
+block('done-project')(
+
+	tag()('article'),
+
+	content()(function(){
+		var content = [];
+		var images = this.ctx.images || [];
+
+		content.push({
+			elem: 'head',
+			content: [
+				{ elem: 'title', content: this.ctx.head.title },
+				{ elem: 'text', content: this.ctx.head.text }
+			]
+		});
+		content.push({
+			elem: 'sidebar',
+			content: [
+				{ elem: 'price', content: '<b>' + this.ctx.price + '</b> сумма сделки' },
+				{ elem: 'profit', content: '<b>' + this.ctx.price + '</b> прибыль сделки' },
+				{ block: 'button', mods: { submit: true }, content: 'Узнать подробности' }
+			]
+		});
+		images.length && content.push({ elem: 'images', content: images.map(function(imagePath){
+				return { block: 'image', url: imagePath };
+			})});
+
+		return { elem: 'container', content: content };
+	}),
+
+	elem('title').tag()('h1')
+
+)

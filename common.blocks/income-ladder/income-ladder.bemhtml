@@ -1,0 +1,10 @@
+block('income-ladder')(
+	content()(function(){
+		return [
+			{ elem: 'step', mods: { lv: 1 }, content: ['<b>2,15 млн</b> Выручка (в месяц)']},
+			{ elem: 'step', mods: { lv: 2 }, content: ['<b>1,85 млн</b> Затраты (ВСЕ)']},
+			{ elem: 'step', mods: { lv: 3 }, content: ['<b>14%</b> Рентабельность']},
+			{ elem: 'step', mods: { lv: 4 }, content: ['<b>300 000</b> Чистая прибыль']}
+		];
+	})
+)

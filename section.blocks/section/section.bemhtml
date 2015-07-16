@@ -1,0 +1,9 @@
+match(this.block.indexOf('section') === 0).mod('shrink', true)(
+	tag()('section'),
+	content()(function(){
+		return {
+			elem: 'container',
+			content: this.ctx.content
+		}
+	})
+)

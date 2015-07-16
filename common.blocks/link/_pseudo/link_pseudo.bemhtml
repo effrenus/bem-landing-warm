@@ -1,0 +1,4 @@
+block('link').mod('pseudo', true)(
+	tag()('b'),
+	js()(true)
+)

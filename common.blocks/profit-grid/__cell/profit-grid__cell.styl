@@ -1,0 +1,64 @@
+$cell-count = 5
+
+.profit-grid__cell
+	position: relative
+	display: table-cell
+	width: (100% / $cell-count)
+	padding: 80px 15px 20px 15px
+	box-sizing: border-box
+	border-right: 2px solid #FFF
+	text-align: center
+
+	&_last
+		border: 0
+
+	&:before
+		content: ''
+		position: absolute
+		top: 20px
+		left: 50%
+		display: inline-block
+
+	&_type_wallet:before
+		sprite($wh_wallet)
+		margin-left: -($wh_wallet_width/2)
+
+	&_type_mess:before
+		sprite($wh_mess)
+		margin-left: -($wh_mess_width/2)
+
+	&_type_money:before
+		sprite($wh_money)
+		margin-left: -($wh_money_width/2)
+
+	&_type_hitech:before
+		sprite($wh_hitech)
+		margin-left: -($wh_hitech_width/2)
+
+	&_type_quality:before
+		sprite($wh_quality)
+		margin-left: -($wh_quality_width/2)
+
+	&_type_partner:before
+		sprite($wh_partner)
+		margin-left: -($wh_partner_width/2)
+
+	&_type_org:before
+		sprite($wh_org)
+		margin-left: -($wh_org_width/2)
+
+	&_type_best:before
+		sprite($wh_best)
+		margin-left: -($wh_best_width/2)
+
+	&_type_exclusive:before
+		sprite($wh_exclusive)
+		margin-left: -($wh_exclusive_width/2)
+
+	&_type_trend:before
+		sprite($wh_trend)
+		margin-left: -($wh_trend_width/2)
+
+	&_type_aim:before
+		sprite($wh_aim)
+		margin-left: -($wh_aim_width/2)

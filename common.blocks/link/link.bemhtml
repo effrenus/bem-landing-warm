@@ -1,0 +1,3 @@
+block('link').mod('contact', true)(
+	content()(function() {return this.ctx.content})
+)

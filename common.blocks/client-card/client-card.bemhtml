@@ -1,0 +1,22 @@
+block('client-card')(
+
+	content()(function(){
+		var blocks = [
+			{image: '../../images/client-cards/1.png', title: 'Частные лица', text: 'Остекление квартир и коттеджей', price: '27&nbsp;000'},
+			{image: '../../images/client-cards/2.png', title: 'Строительные компании', text: 'Остекление жилых и коммерческих объектов недвижимости', price: '700&nbsp;000'},
+			{image: '../../images/client-cards/3.png', title: 'Государственные организации', text: 'Остекление детских садов, больниц, бюджетных организаций', price: '1&nbsp;100&nbsp;000'},
+		];
+		return blocks.map(function(item){
+			return {
+				elem: 'card',
+				content: [
+					{ block: 'image', mix: { block: 'client-card', elem: 'image' }, url: item.image },
+					{ elem: 'title', content: item.title },
+					{ elem: 'text', content: item.text },
+					{ elem: 'price', content: 'Средний чек <b>' + item.price + '&nbsp;P</b>'}
+				]
+			};
+		});
+	})
+
+)

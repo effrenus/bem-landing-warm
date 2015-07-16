@@ -1,0 +1,38 @@
+.income-side
+	color: #fff
+	text-align: center
+
+	&__title
+		margin-bottom: 1em
+		font-size: 1.8em
+		font-weight: bold
+
+	&__items
+		display: flex
+		justify-content: center
+		margin-bottom: 50px
+
+	&__item
+		width: 140px
+		margin: 0 20px
+		font-weight: bold
+
+		&_ico:before
+			content: ''
+			display: block
+			margin: 0 auto 10px
+
+		&_ico_type_1:before
+			sprite($side1)
+
+		&_ico_type_2:before
+			sprite($side2)
+
+		&_ico_type_3:before
+			sprite($side3)
+
+		&_ico_type_4:before
+			sprite($side4)
+
+		&_ico_type_5:before
+			sprite($side5)

@@ -1,0 +1,16 @@
+block('form-request')(
+
+	tag()('form'),
+
+	content()(
+		function(){
+			return [
+				{ block: 'input', mix: { block: 'form-request', elem: 'input' }, size: 's', type: 'search', placeholder: 'Ваше имя'},
+				{ block: 'input', mix: { block: 'form-request', elem: 'input' }, size: 's', type: 'search', placeholder: 'Ваше телефон'},
+				{ block: 'input', mix: { block: 'form-request', elem: 'input' }, size: 's', type: 'search', placeholder: 'Ваш E-mail'},
+				{ block: 'button', mods: { submit: true, upper: true }, mix: { block: 'form-request', elem: 'button' }, type: 'submit', text: 'Получите бизнес план' }
+			];
+		}
+	)
+
+)

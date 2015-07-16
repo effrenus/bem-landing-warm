@@ -1,0 +1,12 @@
+block('s-intro')(
+
+	tag()('section'),
+
+	content()(function(){
+		return {
+			elem: 'container',
+			content: this.ctx.content
+		}
+	})
+
+)

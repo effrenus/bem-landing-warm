@@ -1,0 +1,19 @@
+block('merits')(
+	content()(function(){
+		return [
+			{
+				elem: 'title',
+				content: this.ctx.title
+			},
+			{
+				elem: 'text',
+				content: this.ctx.text
+			}
+		];
+	})
+)
+
+
+block('merits').elem('title').tag()('span')
+
+block('merits').elem('text').tag()('span')

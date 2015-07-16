@@ -1,0 +1,17 @@
+block('gallery')(
+	js()(true),
+	content()(
+		function(){
+			var content = [],
+					images = this.ctx.images || [];
+			images.forEach(function(imagePath){
+				content.push({
+					block: 'image',
+					url: imagePath
+				})
+			});
+
+			return content;
+		}
+	)
+)

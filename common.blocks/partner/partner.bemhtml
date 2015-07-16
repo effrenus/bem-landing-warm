@@ -1,0 +1,13 @@
+block('partner')(
+	attrs()(function(){
+		return {
+			style: 'background-image: url(' + this.ctx.image + ')'
+		}
+	}),
+	content()(function(){
+		var content = [];
+		content.push({ elem: 'text', content: this.ctx.text });
+
+		return content;
+	})
+)

@@ -1,0 +1,8 @@
+block('profit').elem('em')(
+	content()(function(){
+		return [
+			{ elem: 'item', content: this.ctx.content[0] },
+			{ elem: 'item', content: this.ctx.content[1] }
+		];
+	})
+)
